@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.QuestaoTresFragment" >
+
+    <fragment
+        android:id="@+id/fragment4"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.FormPerguntasFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/activity_form_perguntas" />
+
+    <TextView
+        android:id="@+id/textViewTituloQuestaoTres"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="Questão 3"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment4" />
+
+    <TextView
+        android:id="@+id/textViewQuestaoTresFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Qual das alternativas melhor classifica sua formação e experiência com o mercado financeiro?"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloQuestaoTres" />
+
+    <RadioGroup
+        android:id = "@+id/radioGroupQuestaoTres"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "8dp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/textViewQuestaoTresFragment">
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoTresA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não possuo formação acadêmica ou conhecimento do mercado financeiro"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoTresB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possuo formação acadêmica na área financeira, mas não tenho experiência com o mercado financeiro"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoTresC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possuo formação acadêmica em outra área, mas possuo conhecimento do mercado financeiro"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoTresD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Possuo formação acadêmica na área financeira ou pleno conhecimento do mercado financeiro"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQuestaoTresProximoFragment"
+        android:layout_width="121dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

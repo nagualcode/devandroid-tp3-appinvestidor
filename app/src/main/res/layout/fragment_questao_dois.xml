@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    xmlns:tools = "http://schemas.android.com/tools"
+    android:id = "@+id/frameLayout4"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    tools:context = ".ui.fragments.QuestaoDoisFragment" >
+
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.FormPerguntasFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/activity_form_perguntas" />
+
+    <TextView
+        android:id="@+id/textViewTituloQuestaoDois"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="Questão 2"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment3" />
+
+    <TextView
+        android:id = "@+id/textViewQuestaoDoisFragment"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "8dp"
+        android:text = "Qual o objetivo desse investimento?"
+        android:textAlignment = "center"
+        android:textSize = "24sp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/textViewTituloQuestaoDois" />
+
+    <RadioGroup
+        android:id = "@+id/radioGroupQuestaoDois"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "8dp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/textViewQuestaoDoisFragment">
+
+        <RadioButton
+            android:id = "@+id/radioButtonQuestaoDoisA"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "Preservação do capital para não perder valor ao longo do tempo, assumindo baixos riscos de perdas"
+            android:textSize = "18sp" />
+
+        <RadioButton
+            android:id = "@+id/radioButtonQuestaoDoisB"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "Aumento gradual do capital ao longo do tempo, assumindo riscos moderados"
+            android:textSize = "18sp" />
+
+        <RadioButton
+            android:id = "@+id/radioButtonQuestaoDoisC"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "Aumento do capital acima da taxa de retorno média do mercado, mesmo que isso implique assumir riscos de perdas elevadas"
+            android:textSize = "18sp" />
+
+        <RadioButton
+            android:id = "@+id/radioButtonQuestaoDoisD"
+            android:layout_width = "match_parent"
+            android:layout_height = "wrap_content"
+            android:text = "Obter no curto prazo retornos elevados e significativamente acima da taxa de retorno média do mercado, assumindo riscos elevados"
+            android:textSize = "18sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQuestaoDoisProximoFragment"
+        android:layout_width="121dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

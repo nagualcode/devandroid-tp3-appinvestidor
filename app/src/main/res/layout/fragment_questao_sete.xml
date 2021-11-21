@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.QuestaoSeteFragment">
+
+    <fragment
+        android:id="@+id/fragment8"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.FormPerguntasFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/activity_form_perguntas" />
+
+    <TextView
+        android:id="@+id/textViewTituloQuestaoSete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="Questão 7"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment8" />
+
+    <TextView
+        android:id="@+id/textViewQuestaoSeteFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Em relação as aplicações e rendimentos, em qual dessas situações você se enquadra?"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloQuestaoSete" />
+
+    <RadioGroup
+        android:id = "@+id/radioGroupQuestaoSete"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "8dp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/textViewQuestaoSeteFragment">
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoSeteA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Conto com o rendimento dessas aplicações para complementar minha renda mensal"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoSeteB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Eventualmente posso resgatar parte das aplicações para fazer frente aos meus gastos. Contudo, não tenho intenção de resgatar no curto prazo e pretendo fazer             aplicações regulares"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoSeteC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não tenho intenção de resgatar no curto prazo, mas não pretendo realizar
+            novas aplicações"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoSeteD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Não tenho intenção de resgatar no curto prazo e ainda pretendo fazer
+            aplicações regulares"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQuestaoSeteProximoFragment"
+        android:layout_width="121dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

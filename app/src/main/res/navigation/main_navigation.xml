@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/main_navigation"
+            app:startDestination = "@id/dashboardFragment">
+    <fragment
+        android:id = "@+id/dashboardFragment"
+        android:name = "br.edu.infnet.appInvestidor.ui.fragments.DashboardFragment"
+        android:label = "fragment_dashboard"
+        tools:layout = "@layout/fragment_dashboard" >
+        <action
+            android:id = "@+id/action_dashboardFragment_to_questaoUmFragment"
+            app:destination = "@id/questaoUmFragment" />
+    </fragment>
+    <fragment
+        android:id = "@+id/questaoUmFragment"
+        android:name = "br.edu.infnet.appInvestidor.ui.fragments.QuestaoUmFragment"
+        android:label = "fragment_questao_um"
+        tools:layout = "@layout/fragment_questao_um" >
+        <action
+            android:id="@+id/action_questaoUmFragment_to_questaoDoisFragment"
+            app:destination="@id/questaoDoisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoDoisFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoDoisFragment"
+        android:label="fragment_questao_dois"
+        tools:layout="@layout/fragment_questao_dois" >
+        <action
+            android:id="@+id/action_questaoDoisFragment_to_questaoTresFragment"
+            app:destination="@id/questaoTresFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoTresFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoTresFragment"
+        android:label="fragment_questao_tres"
+        tools:layout="@layout/fragment_questao_tres" >
+        <action
+            android:id="@+id/action_questaoTresFragment_to_questaoQuatroFragment"
+            app:destination="@id/questaoQuatroFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoQuatroFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoQuatroFragment"
+        android:label="fragment_questao_quatro"
+        tools:layout="@layout/fragment_questao_quatro" >
+        <action
+            android:id="@+id/action_questaoQuatroFragment_to_questaoCincoFragment"
+            app:destination="@id/questaoCincoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoCincoFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoCincoFragment"
+        android:label="fragment_questao_cinco"
+        tools:layout="@layout/fragment_questao_cinco" >
+        <action
+            android:id="@+id/action_questaoCincoFragment_to_questaoSeisFragment"
+            app:destination="@id/questaoSeisFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoSeisFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoSeisFragment"
+        android:label="fragment_questao_seis"
+        tools:layout="@layout/fragment_questao_seis" >
+        <action
+            android:id="@+id/action_questaoSeisFragment_to_questaoSeteFragment"
+            app:destination="@id/questaoSeteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoSeteFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoSeteFragment"
+        android:label="fragment_questao_sete"
+        tools:layout="@layout/fragment_questao_sete" >
+        <action
+            android:id="@+id/action_questaoSeteFragment_to_questaoOitoFragment"
+            app:destination="@id/questaoOitoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoOitoFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoOitoFragment"
+        android:label="fragment_questao_oito"
+        tools:layout="@layout/fragment_questao_oito" >
+        <action
+            android:id="@+id/action_questaoOitoFragment_to_questaoNoveFragment"
+            app:destination="@id/questaoNoveFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/questaoNoveFragment"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.QuestaoNoveFragment"
+        android:label="fragment_questao_nove"
+        tools:layout="@layout/fragment_questao_nove" >
+        <action
+            android:id="@+id/action_questaoNoveFragment_to_resultadoActivity2"
+            app:destination="@id/resultadoActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/resultadoActivity"
+        android:name="br.edu.infnet.appInvestidor.ui.activities.ResultActivity"
+        android:label="activity_resultado"
+        tools:layout="@layout/activity_resultado" />
+</navigation>

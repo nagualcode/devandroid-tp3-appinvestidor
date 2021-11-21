@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.QuestaoCincoFragment">
+
+    <fragment
+        android:id="@+id/fragment6"
+        android:name="br.edu.infnet.appInvestidor.ui.fragments.FormPerguntasFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout="@layout/activity_form_perguntas" />
+
+    <TextView
+        android:id="@+id/textViewTituloQuestaoCinco"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="serif"
+        android:text="Questão 5"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment6" />
+
+    <TextView
+        android:id="@+id/textViewQuestaoCincoFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Caso as suas aplicações sofressem uma queda superior a 30%, o que você faria?"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloQuestaoCinco" />
+
+    <RadioGroup
+        android:id = "@+id/radioGroupQuestaoCinco"
+        android:layout_width = "0dp"
+        android:layout_height = "wrap_content"
+        android:layout_marginStart = "8dp"
+        android:layout_marginTop = "16dp"
+        android:layout_marginEnd = "8dp"
+        app:layout_constraintEnd_toEndOf = "parent"
+        app:layout_constraintStart_toStartOf = "parent"
+        app:layout_constraintTop_toBottomOf = "@+id/textViewQuestaoCincoFragment">
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoCincoA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resgataria toda a aplicação e aplicaria na poupança"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoCincoB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manteria aplicação aguardando uma melhora do mercado"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQuestaoCincoC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Aumentaria a aplicação para aproveitar as oportunidades do mercado"
+            android:textSize="18sp" />
+
+        <!--        <RadioButton-->
+        <!--            android:id="@+id/radioButtonQuestaoCincoD"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Possuo formação acadêmica na área financeira ou pleno conhecimento do mercado financeiro"-->
+        <!--            android:textSize="18sp" />-->
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnQuestaoCincoProximoFragment"
+        android:layout_width="121dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:text="Próximo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

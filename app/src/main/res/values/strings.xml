@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">tp3-android-perfil-investidor</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="textoMainActivity">Questionário com objetivo de auxiliá-lo a
+        identificar seu <b>perfil de investidor</b> (conservador, moderado ou
+        arrojado) e recomendar os investimentos mais alinhados a esse
+        perfil. Para cada questão, escolha a alternativa que <u>mais se
+            aproxima</u> dos seus objetivos e expectativas de investimento.
+    </string>
+
+    <string name="textoNavigate">O questionário é composto por <b>nove
+        questões</b>.
+        Cada quetão possui uma pontuação diferente e, de acordo com <u>a soma
+        desses pontos</u>, será atribuído um <b>perfil de investidor</b> ao
+        usuário que respondeu esse questionário.
+    </string>
+</resources>
